@@ -66,7 +66,7 @@ export.createschema = function(req,res) {
 (
   id serial NOT NULL,
   lat character varying(10),
-  "long" character varying(10),
+  long character varying(10),
   address character varying(200),
   name character varying(100),
   userid character varying(10),
