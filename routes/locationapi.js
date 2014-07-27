@@ -60,4 +60,24 @@ exports.deletelocation = function(req, res) {
   	});		
 };
 
+/* This is not how it should be done in production */
+export.createschema = function(req,res) {
+    dbwrap.runsql("CREATE TABLE locations
+(
+  id serial NOT NULL,
+  lat character varying(10),
+  "long" character varying(10),
+  address character varying(200),
+  name character varying(100),
+  userid character varying(10),
+  CONSTRAINT locations_pkey PRIMARY KEY (id)
+);", [req.params.id,req.params.userid], function (err, results) {
+      if (err) {
+        console.error("Error selecting locations from db", err);
+        return res.send({err: "Cannot delete location"});
+      }
+      else res.send({success: "Location deleted Successfully"});
+    }); 
+
+}
 
