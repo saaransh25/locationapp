@@ -8,3 +8,5 @@
 4 - This application assumes that the users are based in San Francisco
 
 5 - Passportjs module is used to implement authentication
+
+6 - Can be accessed at: http://tranquil-escarpment-4049.herokuapp.com/
