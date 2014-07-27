@@ -71,7 +71,7 @@ passport.deserializeUser(function(id, done) {
 
 passport.use(new LocalStrategy(
     function(username, password, done) {
-        if ((username=="uber1" || username=="uber2") && password=="Welcome") {
+        if ((username=="user1" || username=="user2") && password=="Welcome") {
             return done(null,username);
         }
         else return done(null, false);

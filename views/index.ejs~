@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Saaransh">
 
-    <title>Favorite Pickup Locations</title>
+    <title>Uber Favorite Pickup Locations</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -48,13 +48,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Favorite Locations</a>
+          <a class="navbar-brand" href="#">Uber</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
             <li class="active"><a href="#">Favorite Locations</a></li>
+            <li><a href="#">Promotions</a></li>
             <li><a href="#">Payments</a></li>
+            <li><a href="#">Get Free Rides</a></li>
             <p class="navbar-text">Signed in as ^%= user %^</p>
             <li><form class="navbar-form navbar-right" action="/logout" method="get"><input class="btn btn-primary" type="submit" value="Logout"/></form></li>
           </ul>
