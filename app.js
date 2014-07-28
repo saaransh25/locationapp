@@ -31,8 +31,9 @@ app.post('/api/locations', ensureAuthenticated, locationapi.createlocation);
 app.put('/api/locations/:id', ensureAuthenticated, locationapi.updatelocation);
 app.del('/api/locations/:id', ensureAuthenticated, locationapi.deletelocation);
 
-app.del('/create', locationapi.createschema);
+app.get('/create', locationapi.createschema);
 
+app.get('/delete', locationapi.deleteschema);
 
 
 
